@@ -115,8 +115,7 @@ async def pingme(pong):
                     f"`%sms` \n"
                     f"❃ **Uptime:** "
                     f"`{uptime}` \n"
-                    f"**✦҈͜͡➳ Bot Name:** `{ALIVE_NAME}`" % (duration)
-                    f"     [Alvin](t.me/liualvinas)")
+                    f"**✦҈͜͡➳ Bot Name:** `{ALIVE_NAME}`" % (duration))
 
 
 @register(outgoing=True, pattern="^.sinyal$")

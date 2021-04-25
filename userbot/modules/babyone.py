@@ -20,7 +20,7 @@ async def typewriter(typew):
     await typew.edit("__GELAYY__ðŸ¤®")
     
    
-@register(outgoing=True, pattern='^.kntl(?: |$)(.*)')
+@register(outgoing=True, pattern='^.knln(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
@@ -50,6 +50,6 @@ async def typewriter(typew):
 
 CMD_HELP.update({
     "animasi1":
-    "`.hai` ; `.kntl` ; `.alay`\
-    \nUsage: lu liat sendiri lah anjg"
+    "`.hai` ; `.knln` ; `.alay`\
+    \nUsage: Vip Khusus Buat Kamu!"
 })
