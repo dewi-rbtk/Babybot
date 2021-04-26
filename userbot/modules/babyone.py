@@ -23,14 +23,28 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^.knln(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    sleep(1)
+    sleep(2)
     await typew.edit("Nama Aku Amelia")
-    sleep(1)
+    sleep(2)
     await typew.edit("Dan Aku Cantik,")
-    sleep(1)
+    sleep(2)
     await typew.edit("Yuk PC Aku, Langsung Cek Profil Aku Ya")              
-    sleep(1)
+    sleep(2)
     await typew.edit("**I LOVE YOU**")
+    
+@register(outgoing=True, pattern='^.citra(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(2)
+    await typew.edit("Haii !!")
+    sleep(2)
+    await typew.edit("Aku Nama Aku Citra,")
+    sleep(2)
+    await typew.edit("Yang Paling Cantik")              
+    sleep(2)
+    await typew.edit("Macam Bidadari")
+    sleep(2)
+    await typew.edit("**Mwah💋**")
 
 
 @register(outgoing=True, pattern='^.alay(?: |$)(.*)')
@@ -50,6 +64,6 @@ async def typewriter(typew):
 
 CMD_HELP.update({
     "animasi1":
-    "`.hai` ; `.knln` ; `.alay`\
+    "`.hai` ; `.knln` ; `.alay` ; `.citra`\
     \nUsage: Vip Khusus Buat Kamu!"
 })
